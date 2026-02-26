@@ -2,7 +2,7 @@
 
 A modern, high-performance portfolio website built with React, Vite, and Tailwind CSS. Designed with a dark, tech-focused aesthetic and smooth motion-driven interactions.
 
-🔗 **Live Website:** https://your-netlify-link.netlify.app  
+🔗 **Live Website:** [Click Here](https://niloypal.netlify.app/)  
 💼 **Role:** Software Engineer | Full-Stack Developer  
 
 ---
