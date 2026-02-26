@@ -80,6 +80,7 @@ const Projects = () => {
       status: 'In Development',
       statusColor: 'green',
       github: 'https://github.com/PixelMonk07/portfolio-website',
+      live: 'https://niloypal.netlify.app',
       description: 'My professional portfolio to showcase - My story, skills, projects, and a place to conatct me from all over the world',
       features: [
         'Dynamic Hero with Typewriter Identity Animation',
