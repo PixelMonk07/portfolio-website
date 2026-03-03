@@ -35,35 +35,7 @@ This portfolio showcases my projects, technical skills, and professional journey
 ---
 
 ## 📁 Project Structure
-niloy-portfolio/
-├── public/
-├── src/
-│   ├── components/
-│   │   └── workspace.webp
-│   ├── components/
-│   │   ├── Navbar.jsx
-│   │   └── Footer.jsx
-│   │   └── ThemeToggle.jsx
-│   ├── contexts/
-│   │   └── ThemeToggle.jsx
-│   ├── sections/
-│   │   ├── Hero.jsx
-│   │   ├── About.jsx
-│   │   ├── Skills.jsx
-│   │   ├── Projects.jsx
-│   │   └── Contact.jsx
-│   ├── App.jsx
-│   ├── main.jsx
-│   └── index.css
-├── .gitignore
-├── index.html
-├── package.json
-├── package-lock.json
-├── tailwind.config.js
-├── postcss.config.js
-├── QUICKSTART.md
-├── README.md
-└── vite.config.js
+niloy-portfolio/ ├── public/ ├── src/ │ ├── components/ │ │ └── workspace.webp │ ├── components/ │ │ ├── Navbar.jsx │ │ └── Footer.jsx │ │ └── ThemeToggle.jsx │ ├── contexts/ │ │ └── ThemeToggle.jsx │ ├── sections/ │ │ ├── Hero.jsx │ │ ├── About.jsx │ │ ├── Skills.jsx │ │ ├── Projects.jsx │ │ └── Contact.jsx │ ├── App.jsx │ ├── main.jsx │ └── index.css ├── .gitignore ├── index.html ├── package.json ├── package-lock.json ├── tailwind.config.js ├── postcss.config.js ├── QUICKSTART.md ├── README.md └── vite.config.js
 
 ---
 
