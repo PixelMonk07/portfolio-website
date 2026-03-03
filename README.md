@@ -35,8 +35,35 @@ This portfolio showcases my projects, technical skills, and professional journey
 ---
 
 ## 📁 Project Structure
-niloy-portfolio/ ├── public/ ├── src/ │ ├── components/ │ │ └── workspace.webp │ ├── components/ │ │ ├── Navbar.jsx │ │ └── Footer.jsx │ │ └── ThemeToggle.jsx │ ├── contexts/ │ │ └── ThemeToggle.jsx │ ├── sections/ │ │ ├── Hero.jsx │ │ ├── About.jsx │ │ ├── Skills.jsx │ │ ├── Projects.jsx │ │ └── Contact.jsx │ ├── App.jsx │ ├── main.jsx │ └── index.css ├── .gitignore ├── index.html ├── package.json ├── package-lock.json ├── tailwind.config.js ├── postcss.config.js ├── QUICKSTART.md ├── README.md └── vite.config.js
-
+niloy-portfolio/
+├── public/                        # Static assets served as-is
+├── src/
+│   ├── assets/
+│   │   └── workspace.webp         # Workspace image used in About/Hero
+│   ├── components/
+│   │   ├── Navbar.jsx             # Top navigation bar
+│   │   ├── Footer.jsx             # Footer section
+│   │   └── ThemeToggle.jsx        # Dark/light mode toggle button
+│   ├── contexts/
+│   │   └── ThemeContext.jsx       # React context for theme state
+│   ├── sections/
+│   │   ├── Hero.jsx               # Landing / hero section
+│   │   ├── About.jsx              # About me section
+│   │   ├── Skills.jsx             # Skills & tech stack section
+│   │   ├── Projects.jsx           # Projects showcase section
+│   │   └── Contact.jsx            # Contact form / info section
+│   ├── App.jsx                    # Root component, layout & routing
+│   ├── main.jsx                   # React entry point
+│   └── index.css                  # Global styles & Tailwind directives
+├── .gitignore                     # Files & folders ignored by Git
+├── index.html                     # HTML entry point (Vite)
+├── package.json                   # Project metadata & dependencies
+├── package-lock.json              # Locked dependency versions
+├── tailwind.config.js             # Tailwind CSS configuration
+├── postcss.config.js              # PostCSS configuration
+├── vite.config.js                 # Vite bundler configuration
+├── QUICKSTART.md                  # Quick setup guide
+└── README.md                      # Project documentation (this file)
 ---
 
 ## 🛠 Tech Stack
