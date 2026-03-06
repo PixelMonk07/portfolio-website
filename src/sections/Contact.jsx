@@ -65,8 +65,10 @@ const Contact = () => {
   return (
     <section id="contact" className="min-h-screen bg-gradient-to-b from-gray-100 via-purple-50 to-gray-100 dark:from-black dark:via-purple-950/10 dark:to-black py-20 relative overflow-hidden">
       {success && (
-        <div className="fixed bottom-6 right-6 bg-green-600 text-gray-900 dark:text-white px-6 py-4 rounded-xl shadow-lg animate-slide-in">
-          Message sent successfully!
+        <div className="fixed inset-0 flex items-center justify-center bg-black/40 backdrop-blur-sm z-50">
+          <div className="bg-white dark:bg-black text-green-600 px-8 py-5 rounded-2xl shadow-xl text-lg font-semibold">
+            ✅ Message Sent Successfully!
+          </div>
         </div>
       )}
       {error && (

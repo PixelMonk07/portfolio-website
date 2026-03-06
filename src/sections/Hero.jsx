@@ -2,10 +2,12 @@ import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useEffect, useState } from "react";
 import workspaceImg from "../assets/workspace.webp"
+import ResumeDownload from '../components/ResumeDownload';
 
 const Hero = () => {
   const words = [
     "NILOY",
+    "a FULL-STACK DEV",
     "a SOFTWARE ENGINEER",
     "a BOOKWORM",
     "a GAMER",
@@ -97,6 +99,16 @@ const Hero = () => {
               {/* Gradient Overlay */}
               <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-transparent to-transparent" />
             </div>
+
+            {/* Resume Download Button */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.9 }}
+              className="pt-6"
+            >
+              <ResumeDownload variant="primary" />
+            </motion.div>
 
             {/* Floating "DEV" text */}
             <motion.div

@@ -92,9 +92,32 @@ const About = () => {
               viewport={{ once: true }}
               className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed max-w-3xl"
             >
-              Student developer with a passion for building impactful digital solutions. I specialize in 
-              full-stack web development and backend-centric application design, combining problem-solving 
-              skills with modern technologies to create meaningful software.
+              <h3>Hi! I am NILOY</h3>
+              <br />
+              I'm still figuring out what kind of developer I want to be—and that's exactly
+              where I want to be.
+              <br />
+              <br />
+              As a student developer, I've built projects ranging from AI-chatbots to
+              Expense-Tracker, each teaching me something new about full-stack development, AI
+              and system design. I gravitate toward backend work because I love the logic
+              and architecture behind scalable applications, but I'm equally excited about
+              learning frontend technologies that bring those systems to life.
+              <br />
+              <br />
+              What drives me? Honestly, it's the satisfaction of solving problems that
+              seemed impossible yesterday. Whether it's debugging a tricky database query,
+              designing a clean API, or figuring out how to make something just work, I'm
+              motivated by progress—both in my projects and my skills.
+              <br />
+              <br />
+              I'm currently learning Computer Vision, and actively seeking
+              opportunities to learn from experienced developers and contribute to
+              meaningful projects. I believe the best learning happens through building,
+              failing, iterating, and eventually succeeding.
+              <br />
+              <br />
+              My approach: stay curious, embrace challenges, and never stop learning.
             </motion.p>
 
             {/* Info Cards */}

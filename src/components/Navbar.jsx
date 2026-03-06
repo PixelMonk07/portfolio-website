@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Github, Linkedin, Menu, X } from 'lucide-react';
 import ThemeToggle from './ThemeToggle';
+import ResumeDownload from './ResumeDownload';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,18 +21,17 @@ const Navbar = () => {
     document.body.style.overflow = isOpen ? "hidden" : "auto";
   }, [isOpen]);
 
-  const navItems = ['About', 'Skills', 'Projects', 'Contact'];
+  const navItems = ['About', 'Education', 'Experience', 'Skills', 'Projects', 'Contact'];
 
   return (
     <>
       <motion.nav
         initial={{ y: -100 }}
         animate={{ y: 0 }}
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          scrolled
-            ? 'bg-white/80 dark:bg-black/80 backdrop-blur-lg shadow-lg shadow-purple-500/10'
-            : 'bg-transparent'
-        }`}
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
+          ? 'bg-white/80 dark:bg-black/80 backdrop-blur-lg shadow-lg shadow-purple-500/10'
+          : 'bg-transparent'
+          }`}
       >
         <div className="max-w-7xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
@@ -62,6 +62,16 @@ const Navbar = () => {
                 </motion.a>
               ))}
             </div>
+
+            {/* Resume Download Button */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.3 }}
+              className='hidden md:block'
+            >
+              <ResumeDownload variant="secondary" />
+            </motion.div>
 
             {/* Right Section */}
             <div className="flex items-center gap-4">
@@ -110,9 +120,8 @@ const Navbar = () => {
 
       {/* Drawer */}
       <div
-        className={`fixed top-0 text-white right-0 h-full w-72 bg-black/5 bg-gradient-to-b from-purple-950/30 to-black/10 backdrop-blur-xl border-l border-purple-500/10 z-50 transform transition-transform duration-300 ${
-          isOpen ? 'translate-x-0' : 'translate-x-full'
-        }`}
+        className={`fixed top-0 text-white right-0 h-full w-72 bg-black/5 bg-gradient-to-b from-purple-950/30 to-black/10 backdrop-blur-xl border-l border-purple-500/10 z-50 transform transition-transform duration-300 ${isOpen ? 'translate-x-0' : 'translate-x-full'
+          }`}
       >
         <div className="flex justify-between items-center p-6 border-b border-white/10">
           <h2 className="text-xl font-bold">Menu</h2>
@@ -132,6 +141,10 @@ const Navbar = () => {
               {item}
             </a>
           ))}
+
+          <div className="pt-4 md:hidden">
+            <ResumeDownload variant="secondary" />
+          </div>
 
           <div className="flex gap-6 pt-8 border-t border-white/10">
             <a

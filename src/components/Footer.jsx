@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { ArrowUp } from 'lucide-react';
 
 const Footer = () => {
-  const navLinks = ['About', 'Skills', 'Projects', 'Contact'];
+  const navLinks = ['About', 'Education', 'Experience', 'Skills', 'Projects', 'Contact'];
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });

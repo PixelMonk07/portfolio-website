@@ -92,6 +92,23 @@ const Projects = () => {
       gradient: 'from-pink-500/20 to-purple-500/20',
       image: '💼',
     },
+    {
+      title: 'SPARSH',
+      subtitle: 'Advanced NLP-based chatbot',
+      status: 'Completed',
+      statusColor: 'blue',
+      github: 'https://github.com/PixelMonk07/SPARSH',
+      description: 'An AI-powered conversational chatbot, designed to cater four major industry websites 1. Healthcare, 2. E-Commerce 3. Telecommunication, 4. Banking. Helps users navigate these websites and get information efficiently.',
+      features: [
+        'Multi-Industry Support',
+        'Intent Matching',
+        'Dynamic Responses',
+        'Secure Configuration'
+      ],
+      tags: ['Fast API', 'NLP', 'Groq API', 'Web Integration', 'DialogueFlow API'],
+      gradient: 'from-pink-500/20 to-purple-500/20',
+      image: '🤖',
+    },
   ];
 
   const statusColors = {
