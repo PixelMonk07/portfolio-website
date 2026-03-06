@@ -33,6 +33,9 @@ This portfolio showcases my projects, technical skills, and professional journey
 | 🗃️ Project Showcase | Cards with project descriptions, tags, and tech stack |
 | 📬 Contact Form | Functional form powered by EmailJS |
 | ⚡ Optimized Assets | WebP images, lazy loading, minified build output |
+| 🎓 Education Timeline | Visual timeline showcasing academic background with animated icons |
+| 💼 Experience Timeline | Professional journey display with role details and tech stacks |
+| 🌗 Theme Toggle | Comprehensive light/dark/system theme support across all components |
 
 ---
 
@@ -61,34 +64,31 @@ This portfolio showcases my projects, technical skills, and professional journey
 
 ```
 niloy-portfolio/
-├── public/                        # Static assets served as-is
+├── public/
+│   └── resume/
+│       └── Niloy_Pal_Resume.pdf    # Resume file for download - V2
 ├── src/
-│   ├── assets/
-│   │   └── workspace.webp         # Workspace image used in About/Hero
 │   ├── components/
-│   │   ├── Navbar.jsx             # Top navigation bar
-│   │   ├── Footer.jsx             # Footer section
-│   │   └── ThemeToggle.jsx        # Dark/light mode toggle button
-│   ├── contexts/
-│   │   └── ThemeContext.jsx       # React context for theme state
+│   │   ├── Navbar.jsx              # Navigation with theme toggle
+│   │   ├── Footer.jsx              # Footer with back-to-top
+│   │   ├── ThemeToggle.jsx         # Theme switcher (light/dark/system)
+│   │   └── ResumeDownload.jsx      # Resume download button
 │   ├── sections/
-│   │   ├── Hero.jsx               # Landing / hero section
-│   │   ├── About.jsx              # About me section
-│   │   ├── Skills.jsx             # Skills & tech stack section
-│   │   ├── Projects.jsx           # Projects showcase section
-│   │   └── Contact.jsx            # Contact form / info section
-│   ├── App.jsx                    # Root component, layout & routing
-│   ├── main.jsx                   # React entry point
-│   └── index.css                  # Global styles & Tailwind directives
-├── .gitignore
-├── index.html                     # HTML entry point (Vite)
-├── package.json
-├── package-lock.json
-├── tailwind.config.js
-├── postcss.config.js
-├── vite.config.js
-├── QUICKSTART.md
-└── README.md
+│   │   ├── Hero.jsx                # Hero section with CTA
+│   │   ├── About.jsx               # About me section
+│   │   ├── Education.jsx           # Education timeline - V2
+│   │   ├── Experience.jsx          # Experience timeline - V2
+│   │   ├── Skills.jsx              # Skills with progress bars
+│   │   ├── Projects.jsx            # Project showcase
+│   │   └── Contact.jsx             # Contact form with EmailJS
+│   ├── contexts/
+│   │   └── ThemeContext.jsx        # Theme management context
+│   ├── App.jsx                     # Main app component
+│   ├── main.jsx                    # App entry point
+│   └── index.css                   # Global styles + Tailwind
+├── tailwind.config.js              # Tailwind configuration
+├── vite.config.js                  # Vite configuration
+└── package.json                    # Dependencies
 ```
 
 ---
